@@ -194,3 +194,14 @@ footer { padding: 28px 0 40px; color: #fff; background: var(--accent); font-size
   .hero-grid { gap: 40px; }
   .headshot { width: 230px; height: 230px; }
 }
+
+/* Resume preview image (replaces embedded PDF) */
+.resume-preview {
+  display: block; max-width: 760px; margin: 0 auto 24px;
+  border: 1px solid var(--line); border-radius: 6px; overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.10); transition: box-shadow .2s, transform .2s;
+}
+.resume-preview:hover { box-shadow: 0 14px 38px rgba(204,0,51,0.18); transform: translateY(-2px); }
+.resume-preview img { display: block; width: 100%; height: auto; }
+#resume .project-links { justify-content: center; }
+@media (max-width: 820px) { .resume-preview { display: block; } }
